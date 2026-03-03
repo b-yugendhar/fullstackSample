@@ -4,12 +4,8 @@ const c = require("cors")
 const a = e()
 
 a.use(c({
-    origin: "https://fullstack-sample-eight.vercel.app",
-    methods: ["GET", "POST", "OPTIONS"],
-    allowedHeaders: ["Content-Type"]
+    origin: "https://fullstack-sample-eight.vercel.app"
 }))
-
-a.options("*", c())
 
 a.use(e.json())
 
