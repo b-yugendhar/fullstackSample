@@ -7,7 +7,7 @@ f.addEventListener("submit", async (e) => {
     const n = document.getElementById("n").value
     const m = document.getElementById("m").value
 
-    const d = await fetch("https://your-backend-url.onrender.com/contact", {
+    const d = await fetch("https://fullstacksamplebackend.onrender.com", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
