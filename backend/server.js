@@ -15,6 +15,5 @@ a.post("/contact", (r, s) => {
     s.json({ message: "Data received successfully" })
 })
 
-a.listen(5000, () => {
-    console.log("Server started on port 5000")
-})
+const p = process.env.PORT || 5000
+a.listen(p)

@@ -7,7 +7,7 @@ f.addEventListener("submit", async (e) => {
     const n = document.getElementById("n").value
     const m = document.getElementById("m").value
 
-    const d = await fetch("http://localhost:5000/contact", {
+    const d = await fetch("https://your-backend-url.onrender.com/contact", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
